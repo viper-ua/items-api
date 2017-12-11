@@ -1,25 +1,19 @@
-# README
+# Backend JSON API for simple api-frontend project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# items-api
+## To run this app in development mode:
+- clone repository to desired place
+```bash
+git clone https://github.com/viper-ua/items-api.git
+```
+- go inside project directory, install necessary dependencies and setup DB
+```bash
+cd items-api
+bundle install
+rails db:migrate
+rails db:seed
+```
+- run API server
+```bash
+rails s
+```
+>Server should start at tcp://0.0.0.0:3000
